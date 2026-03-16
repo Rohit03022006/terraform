@@ -1,0 +1,11 @@
+code .
+ssh-keygen 
+terraform init
+terraform validate
+terraform plan
+terraform apply
+chmod 400 terr_key_ec2
+ssh -i terr_key_ec2 ubuntu@ec2-3-249-247-169.eu-west-1.compute.amazonaws.com
+terraform list
+terraform state list
+terraform destroy
